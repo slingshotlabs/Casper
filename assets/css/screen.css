@@ -376,7 +376,7 @@ The knock-on effect of this is ugly browser-scroll bars at the bottom, so 80px o
 }
 
 .site-home-header .site-nav-logo {
-    display: none;
+    display: block;
 }
 
 .site-nav-content {
@@ -574,6 +574,27 @@ The knock-on effect of this is ugly browser-scroll bars at the bottom, so 80px o
     margin-bottom: 1px;
     height: 2.1rem;
     fill: #fff;
+}
+
+.contact-button {
+    display: block;
+    margin-top: 0px;
+    padding: 7px 15px;
+    color: #fff;
+    line-height: 1em;
+    border-radius: 21px;
+    background-color: rgb(83,52,241);
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.contact-button:hover {
+    text-decoration: none;
+    opacity: 1;
+}
+
+.site-nav-right .nav + .contact-button {
+    margin-left: 24px;
 }
 
 /* Special behaviors for home navigation */

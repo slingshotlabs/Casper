@@ -1,6 +1,13 @@
 {{#if isSecondary}}
     <!-- secondary navigation -->
     <ul class="nav">
+
+      <!-- This is a pretty hacky way of making this work inside the list. Basically, two navs. One text, one icon. I want mixed text and icon, so this delivers that without spending time getting a proper solution. -->
+        <li class="nav-blog">
+            <a href="/blog/">Blog</a>
+        </li>
+
+
         {{#foreach navigation}}
             <li class="nav-{{slug}}">
                 <a href="{{url}}" class="social-link">
