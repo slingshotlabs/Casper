@@ -109,6 +109,7 @@ video {
 }
 body {
     line-height: 1;
+    font-family: 'Lato', sans-serif;
 }
 ol,
 ul {
@@ -437,6 +438,7 @@ h6 {
     line-height: 1.15;
     font-weight: 600;
     text-rendering: optimizeLegibility;
+    font-family: 'Roboto Slab', serif;
 }
 
 h1 {
