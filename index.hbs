@@ -8,13 +8,7 @@ into the {body} of the default.hbs template --}}
             {{> "site-nav"}}
             <div class="site-header-content">
                 <h1 class="site-title">
-                    {{#if @site.logo}}
-                        <a href="https://slingshotlabs.io">
-                          <img class="site-logo" src="{{img_url @site.logo size="l"}}" alt="{{@site.title}}" />
-                        </a>
-                    {{else}}
                         {{@site.title}}
-                    {{/if}}
                 </h1>
                 <h2 class="site-description">{{@site.description}}</h2>
             </div>
