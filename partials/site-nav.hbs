@@ -19,14 +19,14 @@
     <div class="site-nav-right">
         {{#if @site.secondary_navigation}}
             {{navigation type="secondary"}}
-            <a class="contact-button" href="mailto:hello@slingshotlabs.io">👋&nbsp;&nbsp;Let's Talk</a>
+            <a class="contact-button" href="mailto:hello@slingshotlabs.io">👋 &nbsp; &nbsp;Let's Talk</a>
         {{else}}
             <div class="social-links">
                     {{!-- <a class="social-link social-link-gh" href="https://github.com/slingshotlabs" title="Slingshot Labs Github" target="_blank">{{> "icons/gitub"}}</a> --}}
               {{!--   {{#if @site.twitter}}
                     <a class="social-link social-link-tw" href="{{twitter_url @site.twitter}}" title="Twitter" target="_blank" rel="noopener">{{> "icons/twitter"}}</a>
                 {{/if}} --}}
-                    <a class="subscribe-button" href="mailto:hello@slingshotlabs.io">👋 Let's Talk</a>
+                    <a class="subscribe-button" href="mailto:hello@slingshotlabs.io">👋 &nbsp; &nbsp;Let's Talk</a>
             </div>
             {{#unless @labs.members}}
                 <a class="rss-button" href="https://feedly.com/i/subscription/feed/{{@site.url}}/rss/" title="RSS" target="_blank" rel="noopener">{{> "icons/rss"}}</a>

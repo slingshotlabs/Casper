@@ -75,7 +75,7 @@ body {
 /* Centered content container blocks */
 .inner {
     margin: 0 auto;
-    max-width: 1040px;
+    max-width: 1300px;
     width: 100%;
 }
 
@@ -103,6 +103,7 @@ body {
 
     .home-template .site-nav {
         position: relative;
+        padding-right: 13px;
     }
 }
 
@@ -115,8 +116,9 @@ body {
     margin-top: 64px;
     padding-bottom: 12px;
     color: #fff;
-    background: color(var(--darkgrey) l(-5%)) repeat 50%;
+    background-color: #14141b;
     background-size: 17px;
+    padding-left: 55px;
 }
 
 .site-header-background:before {
@@ -192,6 +194,7 @@ body {
 
 .site-home-header .site-header-background {
     margin-top: 0;
+    padding-top: 16px;
 }
 
 .site-home-header .site-header-content {
@@ -206,7 +209,7 @@ body {
 }
 
 .site-home-header .site-description {
-    font-size: 24px;
+    font-size: 22px;
     line-height: 32px;
     font-weight: 400;
     text-align: center;
@@ -374,12 +377,13 @@ The knock-on effect of this is ugly browser-scroll bars at the bottom, so 80px o
 
 .site-nav-logo img {
     display: block;
-    width: auto;
-    height: 21px;
+    width: 210px;
+    height: auto;
 }
 
 .site-home-header .site-nav-logo {
     display: block;
+    padding-top: 9px;
 }
 
 .site-nav-content {
@@ -406,12 +410,16 @@ The knock-on effect of this is ugly browser-scroll bars at the bottom, so 80px o
 .nav li a {
     position: relative;
     display: block;
-    padding: 12px 12px;
+    padding-top: 13px;
+    padding-bottom: 12px;
+    padding-left: 12px;
+    padding-right: 12px;
     color: #fff;
     opacity: 0.8;
     transition: opacity 0.35s ease-in-out;
     font-size: 16px;
     line-height: 24px;
+    padding-top: 13px;
 }
 
 .nav li a:hover {
@@ -485,11 +493,13 @@ The knock-on effect of this is ugly browser-scroll bars at the bottom, so 80px o
     align-items: center;
     padding: 10px 0;
     height: 64px;
+    font-weight: 500;
 }
 
 .site-nav-right .nav {
     position: relative;
     margin: 0;
+    padding-top: 0px;
 }
 
 .site-nav-right .nav a {
@@ -502,6 +512,7 @@ The knock-on effect of this is ugly browser-scroll bars at the bottom, so 80px o
 
 .site-nav-right .nav li:last-of-type a {
     margin-right: -12px;
+    padding-left: 8px;
 }
 
 .social-links {
@@ -599,13 +610,16 @@ The knock-on effect of this is ugly browser-scroll bars at the bottom, so 80px o
 }
 
 .site-nav-right .nav + .contact-button {
-    margin-left: 24px;
+    margin-left: 21px;
 }
 
 /* Special behaviors for home navigation */
 
 .home-template .site-nav-main {
     z-index: 100;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    padding-left: 55px;
 }
 
 .home-template .site-nav-main .site-nav {
@@ -911,7 +925,7 @@ make sure this only happens on large viewports / desktop-ish devices.
     }
 
     .post-card-large .post-card-content {
-        flex: 0 1 361px;
+        flex: 0 1 500px;
         justify-content: center;
     }
 
@@ -2841,6 +2855,8 @@ Usage (In Ghost editor):
     padding-bottom: 60px;
     color: #fff;
     background: var(--slblack);
+    padding-left: 55px;
+    padding-right: 55px;
 }
 
 .site-footer-content {
