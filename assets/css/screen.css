@@ -69,14 +69,17 @@ body {
 /* Full width page blocks */
 .outer {
     position: relative;
-    padding: 0 5vw;
+    padding-left: 24px;
+    padding-right: 24px;
 }
 
 /* Centered content container blocks */
 .inner {
     margin: 0 auto;
-    max-width: 1040px;
+    max-width: 1300px;
     width: 100%;
+    padding-left: 24px;
+    padding-right: 24px;
 }
 
 /* Usage:
@@ -103,6 +106,8 @@ body {
 
     .home-template .site-nav {
         position: relative;
+        padding-right: 24px;
+        padding-left: 24px;
     }
 }
 
@@ -115,8 +120,9 @@ body {
     margin-top: 64px;
     padding-bottom: 12px;
     color: #fff;
-    background: color(var(--darkgrey) l(-5%)) repeat 50%;
+    background-color: #14141b;
     background-size: 17px;
+    padding-left: 55px;
 }
 
 .site-header-background:before {
@@ -192,6 +198,7 @@ body {
 
 .site-home-header .site-header-background {
     margin-top: 0;
+    padding-top: 15px;
 }
 
 .site-home-header .site-header-content {
@@ -199,13 +206,16 @@ body {
 }
 
 .site-home-header .site-title {
-    font-size: 5.5rem;
+    font-size: 38px;
+    line-height: 64px;
+    font-weight: 400;
     text-align: center;
 }
 
 .site-home-header .site-description {
-    font-size: 2.2rem;
-    font-weight: 300;
+    font-size: 22px;
+    line-height: 32px;
+    font-weight: 400;
     text-align: center;
 }
 
@@ -371,12 +381,13 @@ The knock-on effect of this is ugly browser-scroll bars at the bottom, so 80px o
 
 .site-nav-logo img {
     display: block;
-    width: auto;
-    height: 21px;
+    width: 210px;
+    height: auto;
 }
 
 .site-home-header .site-nav-logo {
-    display: none;
+    display: block;
+    padding-top: 9px;
 }
 
 .site-nav-content {
@@ -403,10 +414,16 @@ The knock-on effect of this is ugly browser-scroll bars at the bottom, so 80px o
 .nav li a {
     position: relative;
     display: block;
-    padding: 12px 12px;
+    padding-top: 13px;
+    padding-bottom: 12px;
+    padding-left: 12px;
+    padding-right: 12px;
     color: #fff;
     opacity: 0.8;
     transition: opacity 0.35s ease-in-out;
+    font-size: 16px;
+    line-height: 24px;
+    padding-top: 13px;
 }
 
 .nav li a:hover {
@@ -480,11 +497,13 @@ The knock-on effect of this is ugly browser-scroll bars at the bottom, so 80px o
     align-items: center;
     padding: 10px 0;
     height: 64px;
+    font-weight: 500;
 }
 
 .site-nav-right .nav {
     position: relative;
     margin: 0;
+    padding-top: 0px;
 }
 
 .site-nav-right .nav a {
@@ -497,6 +516,7 @@ The knock-on effect of this is ugly browser-scroll bars at the bottom, so 80px o
 
 .site-nav-right .nav li:last-of-type a {
     margin-right: -12px;
+    padding-left: 8px;
 }
 
 .social-links {
@@ -576,10 +596,35 @@ The knock-on effect of this is ugly browser-scroll bars at the bottom, so 80px o
     fill: #fff;
 }
 
+.contact-button {
+    display: block;
+    margin-top: 0px;
+    padding: 7px 15px;
+    color: #fff;
+    line-height: 1em;
+    border-radius: 21px;
+    background-color: rgb(83,52,241);
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.contact-button:hover {
+    text-decoration: none;
+    opacity: 1;
+}
+
+.site-nav-right .nav + .contact-button {
+    margin-left: 20px;
+    margin-right: 40px;
+}
+
 /* Special behaviors for home navigation */
 
 .home-template .site-nav-main {
     z-index: 100;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    padding-left: 55px;
 }
 
 .home-template .site-nav-main .site-nav {
@@ -683,7 +728,7 @@ The knock-on effect of this is ugly browser-scroll bars at the bottom, so 80px o
     margin: 0 0 0.2em;
     color: var(--gold);
     font-size: 1.2rem;
-    font-weight: 500;
+    font-weight: 700;
     letter-spacing: 0.2px;
     text-transform: uppercase;
 }
@@ -707,7 +752,7 @@ The knock-on effect of this is ugly browser-scroll bars at the bottom, so 80px o
 .post-card-excerpt {
     max-width: 56em;
     color: var(--midgrey);
-    font-family: Georgia, serif;
+    font-family: 'Lato', sans-serif;
 }
 
 .post-card-excerpt p {
@@ -885,7 +930,7 @@ make sure this only happens on large viewports / desktop-ish devices.
     }
 
     .post-card-large .post-card-content {
-        flex: 0 1 361px;
+        flex: 0 1 500px;
         justify-content: center;
     }
 
@@ -1000,7 +1045,7 @@ make sure this only happens on large viewports / desktop-ish devices.
 .post-full-custom-excerpt {
     margin: 20px 0 0;
     color: var(--midgrey);
-    font-family: Georgia, serif;
+    font-family: 'Lato', sans-serif;
     font-size: 2.3rem;
     line-height: 1.4em;
     font-weight: 300;
@@ -1017,7 +1062,11 @@ make sure this only happens on large viewports / desktop-ish devices.
     flex-direction: column;
     align-items: center;
     overflow: hidden;
-    margin: 25px 0 50px;
+    max-width: 1000px;
+    margin-top: 25px;
+    margin-bottom: 50px;
+    margin-left: auto;
+    margin-right: auto;
     background: color(var(--lightgrey) l(+10%));
     border-radius: 3px;
 }
@@ -1033,7 +1082,7 @@ make sure this only happens on large viewports / desktop-ish devices.
     margin: 0 auto;
     padding: 0 170px 6vw;
     min-height: 230px;
-    font-family: Georgia, serif;
+    font-family: 'Lato', sans-serif;
     font-size: 2.0rem;
     line-height: 1.6em;
     background: #fff;
@@ -1277,7 +1326,7 @@ Usage (In Ghost editor):
 .post-full-content h5,
 .post-full-content h6 {
     color: color(var(--darkgrey) l(-5%));
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    font-family: 'Lato', sans-serif;
 }
 
 .post-full-content h1 {
@@ -1355,7 +1404,7 @@ Usage (In Ghost editor):
     padding: 0.4em 1em 0.9em;
     border: 0;
     color: var(--blue);
-    font-family: Georgia,serif;
+    font-family: 'Lato', sans-serif;
     font-size: 3.2rem;
     line-height: 1.35em;
     text-align: center;
@@ -1462,7 +1511,7 @@ Usage (In Ghost editor):
     width: auto;
     border-spacing: 0;
     border-collapse: collapse;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    font-family: 'Lato', sans-serif;
     font-size: 1.6rem;
     white-space: nowrap;
     vertical-align: top;
@@ -1867,6 +1916,7 @@ Usage (In Ghost editor):
 .post-full-comments {
     margin: 0 auto;
     max-width: 840px;
+    min-width: unset;
 }
 
 
@@ -2123,7 +2173,7 @@ Usage (In Ghost editor):
 .post-full-content figcaption {
     margin: 1.0em auto 0;
     color: color(var(--midgrey) l(-10%));
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    font-family: 'Lato', sans-serif;
     font-size: 75%;
     line-height: 1.5em;
     text-align: center;
@@ -2208,7 +2258,7 @@ Usage (In Ghost editor):
     display: flex;
     min-height: 148px;
     color: var(--darkgrey);
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    font-family: 'Lato', sans-serif;
     text-decoration: none;
     border-radius: 3px;
     box-shadow: 0 2px 5px -1px rgba(0, 0, 0, 0.15), 0 0 1px rgba(0, 0, 0, 0.09);
@@ -2727,7 +2777,7 @@ Usage (In Ghost editor):
     margin: 0 auto 50px;
     max-width: 650px;
     color: #fff;
-    font-family: Georgia, serif;
+    font-family: 'Lato', sans-serif;
     font-size: 2.4rem;
     line-height: 1.3em;
     font-weight: 300;
@@ -2815,6 +2865,11 @@ Usage (In Ghost editor):
     padding-bottom: 60px;
     color: #fff;
     background: var(--slblack);
+    padding-left: 55px;
+    padding-right: 55px;
+    border-top-width: 1px;
+    border-top-style: solid;
+    border-top-color: rgba(255,255,255,0.1)
 }
 
 .site-footer-content {
@@ -2824,6 +2879,8 @@ Usage (In Ghost editor):
     align-items: center;
     color: rgba(255,255,255,0.7);
     font-size: 1.3rem;
+    padding-left: 48px;
+    padding-right: 48px;
 }
 
 .site-footer-content a {
